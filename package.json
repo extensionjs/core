@@ -11,6 +11,17 @@
     "type": "git",
     "url": "git+https://github.com/extensionjs/core.git"
   },
+  "bugs": {
+    "url": "https://github.com/extensionjs/core/issues"
+  },
+  "homepage": "https://github.com/extensionjs/core",
+  "keywords": [
+    "node",
+    "node-module",
+    "plugin-system",
+    "typescript"
+  ],
+  "readme": "https://github.com/extensionjs/core/blob/develop/README.md",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
