@@ -10,6 +10,17 @@
 # TODO: Update README with more information!
 ```
 
+## Installation
+
+You can install this package with the package manager of your choice:
+
+```sh
+# When using yarn
+yarn add @extensionjs/core
+# When using npm
+npm i @extensionjs/core
+```
+
 ## Development Setup
 
 Similar to almost all node projects:
