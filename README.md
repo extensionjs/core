@@ -21,6 +21,14 @@ yarn add @extensionjs/core
 npm i @extensionjs/core
 ```
 
+## Usage
+
+Please refer to the [API Documentation](https://extensionjs.github.io/core/) for more details.
+
+```sh
+# TODO: Add a sample section which shows basic usage of ExtensionJS's core-package.
+```
+
 ## Development Setup
 
 Similar to almost all node projects:
