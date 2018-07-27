@@ -2,6 +2,8 @@
 
 > Shared components for ExtensionJS
 
+[![Build Status](https://travis-ci.org/extensionjs/core.svg?branch=develop)](https://travis-ci.org/extensionjs/core)
+
 ## Introduction
 
 ```sh
