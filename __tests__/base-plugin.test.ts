@@ -9,7 +9,7 @@ test('Instance should exist', () => {
 });
 
 test('Validate DummyPlugin implementation', () => {
-  expect(plugin.name).toBe('DummyPlugin');
+  expect(plugin.id).toBe('dummy_plugin');
   expect(plugin.version).toBe('1.0.0');
-  expect(plugin.mainPage).toContain('index.html');
+  expect(plugin.pluginName).toBe('DummyPlugin');
 });
