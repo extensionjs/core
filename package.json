@@ -1,0 +1,60 @@
+{
+  "name": "@extensionjs/core",
+  "version": "0.0.1",
+  "description": "Shared components for ExtensionJS",
+  "license": "MIT",
+  "author": {
+    "name": "Patrick Jung",
+    "email": "patrick.pddstudio@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/extensionjs/core.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": false,
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "prettier": "prettier --list-different '**/*.ts'",
+    "precommit": "lint-staged",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "compile": "tsc",
+    "test": "jest",
+    "test:ci": "jest",
+    "clean": "rimraf dist",
+    "clean:dist": "rimraf dist",
+    "docs": "typedoc src/index.ts",
+    "publish:ci": "yarn publish . --access public"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.0",
+    "@types/lodash": "^4.14.112",
+    "@types/node": "^10.5.2",
+    "jest": "^23.4.1",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.0.1",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "rxjs": "6.2.2",
+    "winston": "^3.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "yarn lint",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
